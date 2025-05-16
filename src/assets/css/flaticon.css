@@ -1,0 +1,94 @@
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.flaticon-van-hanh-he-thong:before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(/src/assets/img/service/van-hanh-he-thong.png);
+    background-size: cover;
+}
+.flaticon-cuoc-goi-thuong-hieu:before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(/src/assets/img/service/cuoc-goi-thuong-hieu.png);
+    background-size: cover;
+}
+.flaticon-dich-vu-gia-tri-gia-tang:before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(/src/assets/img/service/dich-vu-gia-tri-gia-tang.png);
+    background-size: cover;
+}
+.flaticon-giai-phap-tong-dai:before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(/src/assets/img/service/giai-phap-tong-dai.png);
+    background-size: cover;
+}
+.flaticon-phat-trien-ung-dung-va-games:before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(/src/assets/img/service/phat-trien-ung-dung-va-games.png);
+    background-size: cover;
+}
+.flaticon-tin-nhan-sms:before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(/src/assets/img/service/tin-nhan-sms.png);
+    background-size: cover;
+}
+.flaticon-phone-call:before {
+    content: "";
+    display: inline-block;
+    filter:invert(100%);
+    height: 20px;
+    width: 20px;
+    background-image: url(/src/assets/img/footer/phone-call.png);
+    background-size: cover;
+}
+.flaticon-envelope:before {
+    content: "";
+    display: inline-block;
+    filter:invert(100%);
+    height: 20px;
+    width: 20px;
+    background-image: url(/src/assets/img/footer/envelope.png);
+    background-size: cover;
+}
+.flaticon-placeholder:before {
+    content: "";
+    display: inline-block;
+    filter:invert(100%);
+    height: 20px;
+    width: 20px;
+    background-image: url(/src/assets/img/footer/location-pin.png);
+    background-size: cover;
+}
+.flaticon-chevron-up:before {
+    content: "";
+    display: inline-block;
+    filter:invert(100%);
+    height: 16px;
+    width: 14px;
+    background-image: url(/src/assets/img/icon/up-arrows.png);
+    background-size: cover;
+}

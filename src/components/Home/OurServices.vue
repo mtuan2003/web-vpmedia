@@ -1,11 +1,11 @@
 <template>
-    <section id="services-section" class="bg-[#fafbfc] section-padding">
+    <section id="services-section" class="bg-[#fafbfc] px-0 py-100px">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class="section-title">
-                    <h6>Những Gì Chúng Tôi Cung Cấp</h6>
-                    <h2>Dịch Vụ Của Chúng Tôi</h2>
+                <div class="text-20px text-center mb-65px lh-normal">
+                    <h6 class="text-16px font-700 text-[#ec5a26] tracking-0.5px uppercase">Những Gì Chúng Tôi Cung Cấp</h6>
+                    <h2 class="text-30px text-[#0b0b31] mt-10px mb-0 ml-0 mr-0 font-700 uppercase">Dịch Vụ Của Chúng Tôi</h2>
                 </div>
             </div>
         </div>
@@ -13,7 +13,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-services-item">
                     <div class="services-icon">
-                        <i class="flaticon-van-hanh-he-thong"></i>
+                        <i class="content-[''] inline-block h-50px w-50px bg-[url(/src/assets/img/service/van-hanh-he-thong.png)] bg-[length:cover]"></i>
                     </div>
                     <h3 text-black font-bold >Vận hành hệ thống</h3>
                     <p>
@@ -29,7 +29,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-services-item">
                     <div class="services-icon">
-                        <i class="flaticon-tin-nhan-sms"></i>
+                        <i class="content-[''] inline-block h-50px w-50px bg-[url(/src/assets/img/service/tin-nhan-sms.png)] bg-[length:cover]"></i>
                     </div>
                     <h3 text-black font-bold>Tin nhắn SMS</h3>
                     <p>
@@ -44,7 +44,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-services-item">
                     <div class="services-icon">
-                        <i class="flaticon-cuoc-goi-thuong-hieu"></i>
+                        <i class="content-[''] inline-block h-50px w-50px bg-[url(/src/assets/img/service/cuoc-goi-thuong-hieu.png)] bg-[length:cover]"></i>
                     </div>
                     <h3 text-black font-bold>Cuộc gọi thương hiệu</h3>
                     <p>
@@ -59,7 +59,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-services-item">
                     <div class="services-icon">
-                        <i class="flaticon-dich-vu-gia-tri-gia-tang"></i>
+                        <i class="content-[''] inline-block h-50px w-50px bg-[url(/src/assets/img/service/dich-vu-gia-tri-gia-tang.png)] bg-[length:cover]"></i>
                     </div>
                     <h3 text-black font-bold>Dịch vụ GTGT (Giá trị gia tăng)</h3>
                     <p>
@@ -75,7 +75,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-services-item">
                     <div class="services-icon">
-                        <i class="flaticon-phat-trien-ung-dung-va-games"></i>
+                        <i class="content-[''] inline-block h-50px w-50px bg-[url(/src/assets/img/service/phat-trien-ung-dung-va-games.png)] bg-[length:cover]"></i>
                     </div>
                     <h3 text-black font-bold>Phát triển ứng dụng và games</h3>
                     <p>
@@ -91,7 +91,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-services-item">
                     <div class="services-icon">
-                        <i class="flaticon-giai-phap-tong-dai"></i>
+                        <i class="content-[''] inline-block h-50px w-50px bg-[url(/src/assets/img/service/giai-phap-tong-dai.png)] bg-[length:cover]"></i>
                     </div>
                     <h3 text-black font-bold>Giải pháp tổng đài VoIP</h3>
                     <p>

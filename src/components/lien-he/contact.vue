@@ -1,24 +1,23 @@
 <template>
-<div class="contact-section section-padding">
+<div class="px-0 py-100px">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="section-title">
-                    <h6>Liên hệ với chúng tôi</h6>
+                <div class="text-20px text-center mb-65px lh-normal">
+                    <h6 class="text-16px font-700 text-[#ec5a26] tracking-0.5px uppercase">Liên hệ với chúng tôi</h6>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="contact-info-content">
-                    <h5>Hà Nội</h5>
-                    <p>Số 3 ngách 4 ngõ 163 Nguyễn Khang, phường Yên Hoà, Cầu Giấy, Hà Nội</p>
-                    <a href="tel:+84902825586" class="no-underline color-[#0b0b31] font-[quicksand]">+84(0) 902 825 586</a>
-                    <a href="mailto:support@vpmedia.vn" class="no-underline color-[#0b0b31] font-[quicksand]">support@vpmedia.vn</a>
+                <div class="bg-[#fff] mt-30px px-20px py-45px text-center rounded-[5px] border-t-3px border-t-solid border-t-[#142b73] shadow-[0_3px_15px_rgba(0,0,0,0.05),0_5px_15px_rgba(0,0,0,0.03)]">
+                    <h5 class="text-5 font-700 mb-2.5">Hà Nội</h5>
+                    <p class="text-4 mb-3">Số 3 ngách 4 ngõ 163 Nguyễn Khang, phường Yên Hoà, Cầu Giấy, Hà Nội</p>
+                    <a href="tel:+84902825586" class="text-4 font-600 tracking-1.5px block lh-normal no-underline color-[#0b0b31] font-[quicksand]">+84(0) 902 825 586</a>
+                    <a href="mailto:support@vpmedia.vn" class="text-4 font-600 tracking-1.5px block lh-normal no-underline color-[#0b0b31] font-[quicksand]">support@vpmedia.vn</a>
                 </div>
             </div>
             <div class="col-lg-6 offset-lg-1">
                 <div class="contact-form font-[quicksand]">
-                    <p class="form-message"></p>
-                    <form id="contact-form" class="contact-form form">
+                    <form class="contact-form form mt-4">
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
@@ -42,28 +41,28 @@
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" id="message" cols="30" rows="6" required="" placeholder="Nội dung"></textarea>
+                                    <textarea name="message" class="form-control resize-y h-auto pt-15px lh-initial" id="message" cols="30" rows="6" required="" placeholder="Nội dung"></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
-                                <div class="contact-form-btn">
-                                    <button type="submit" class="default-btn submit-btn"
+                                <div class="text-left mt-1.25">
+                                    <button type="submit" class="default-btn cursor-pointer"
                                     @mouseenter="updatePosition" @mouseleave="updatePosition" ref="buttonRef">Gửi 
                                         <span ref="spanRef" class="absolute pointer-events-none transition-all duration-300"></span>
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <div id="form-message" style="margin-top: 10px;"></div>
+                        <div class="mt-2.5"></div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="map-section">
-    <div class="google-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391.4691800965354!2d105.79847308637694!3d21.020539898503614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab004e5d9375%3A0x553fc8dce47759e1!2sVPMEDIA!5e0!3m2!1svi!2s!4v1741945668071!5m2!1svi!2s"></iframe>
+<div class="mb-[-0.625rem]">
+    <div class="w-100% h-450px [border:0]">
+        <iframe class="w-100% h-450px [border:0]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391.4691800965354!2d105.79847308637694!3d21.020539898503614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab004e5d9375%3A0x553fc8dce47759e1!2sVPMEDIA!5e0!3m2!1svi!2s!4v1741945668071!5m2!1svi!2s"></iframe>
     </div>
 </div>
 </template>

@@ -9,65 +9,65 @@ const tabs = [
 </script>
 
 <template>
-    <section class="tab-section home-2-tab bg-[#fafbfc] section-padding">
+    <section class="text-[#ffffff] bg-[#fafbfc] px-0 py-100px">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-md-12">
-                <div class="section-title">
-                    <h6>Ứng Dụng Chúng Tôi Đã Phát Triển</h6>
-                    <h2>Chúng tôi tự hào giới thiệu các ứng dụng tiêu biểu.</h2>
+                <div class="text-20px text-center mb-65px lh-normal">
+                    <h6 class="text-16px font-700 text-[#ec5a26] tracking-0.5px uppercase">Ứng Dụng Chúng Tôi Đã Phát Triển</h6>
+                    <h2 class="text-30px text-[#0b0b31] mt-10px mb-0 ml-0 mr-0 font-700 uppercase">Chúng tôi tự hào giới thiệu các ứng dụng tiêu biểu.</h2>
                 </div>
             </div>
         </div>
         <Tab :tabs="tabs">
             <template #tab1>
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="tab-solution-content">
-                            <h3 class="">VBot - Tổng đài AI đa tính năng</h3>
-                            <p>
-                                VBot là giải pháp tổng đài AI thông minh, giúp doanh nghiệp tự động hóa chăm sóc
-                                khách hàng, tối ưu quy trình giao tiếp và nâng cao trải nghiệm người dùng. Với
-                                công nghệ AI tiên tiến, VBot có thể xử lý cuộc gọi, phản hồi tin nhắn và hỗ trợ
-                                khách hàng 24/7.
-                            </p>
-                            <ul class="tab-list">
-                                <li>
-                                    <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Tự động hóa tổng đài với AI, giảm thiểu
-                                        chi phí vận hành
-                                </li>
-                                <li>
-                                    <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Hỗ trợ đa kênh: thoại, SMS, chatbot, tích
-                                        hợp với CRM
-                                </li>
-                                <li>
-                                    <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Cung cấp báo cáo, phân tích dữ liệu và
-                                    tối ưu hiệu suất tổng đài
-                                </li>
-                                <li>
-                                    <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> SDK linh hoạt, dễ dàng tích hợp vào ứng
-                                    dụng và hệ thống của doanh nghiệp
-                                </li>
-                            </ul>
-                            <p>
-                                Với khả năng linh hoạt, dễ dàng tùy chỉnh và tích hợp thông qua SDK mạnh mẽ, VBot
-                                là giải pháp hoàn hảo giúp doanh nghiệp nâng cao chất lượng dịch vụ khách hàng
-                                và tối ưu hiệu quả hoạt động.
-                            </p>
-                            <div class="solutions-btn-link">
-                                <a href="https://vbot.vn/" class="solutions-link">Xem thêm</a>
+                <div class="row !items-center">
+                        <div class="col-lg-7">
+                            <div class="tab-solution-content">
+                                <h3>VBot - Tổng đài AI đa tính năng</h3>
+                                <p>
+                                    VBot là giải pháp tổng đài AI thông minh, giúp doanh nghiệp tự động hóa chăm sóc
+                                    khách hàng, tối ưu quy trình giao tiếp và nâng cao trải nghiệm người dùng. Với
+                                    công nghệ AI tiên tiến, VBot có thể xử lý cuộc gọi, phản hồi tin nhắn và hỗ trợ
+                                    khách hàng 24/7.
+                                </p>
+                                <ul class="tab-list">
+                                    <li>
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Tự động hóa tổng đài với AI, giảm thiểu
+                                            chi phí vận hành
+                                    </li>
+                                    <li>
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Hỗ trợ đa kênh: thoại, SMS, chatbot, tích
+                                            hợp với CRM
+                                    </li>
+                                    <li>
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Cung cấp báo cáo, phân tích dữ liệu và
+                                        tối ưu hiệu suất tổng đài
+                                    </li>
+                                    <li>
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> SDK linh hoạt, dễ dàng tích hợp vào ứng
+                                        dụng và hệ thống của doanh nghiệp
+                                    </li>
+                                </ul>
+                                <p>
+                                    Với khả năng linh hoạt, dễ dàng tùy chỉnh và tích hợp thông qua SDK mạnh mẽ, VBot
+                                    là giải pháp hoàn hảo giúp doanh nghiệp nâng cao chất lượng dịch vụ khách hàng
+                                    và tối ưu hiệu quả hoạt động.
+                                </p>
+                                <div class="mt-4">
+                                    <a href="https://vbot.vn/" class="inline-block underline hover:underline text-16px hover:text-[#ff561d] text-[#ff561d] tracking-0.5px font-700">Xem thêm</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="tab-solution-image">
-                            <img src="/src/assets/img/product/vbot.png" alt="image">
+                        <div class="col-lg-5">
+                            <div class="text-center">
+                                <img src="/src/assets/img/product/vbot.png" alt="image">
+                            </div>
                         </div>
-                    </div>
                 </div>
             </template>
             <template #tab2>
-                <div class="row align-items-center">
+                <div class="row !items-center">
                         <div class="col-lg-7">
                             <div class="tab-solution-content">
                                 <h3>VScan - Ứng dụng quét tài liệu thông minh</h3>
@@ -102,14 +102,14 @@ const tabs = [
                             </div>
                         </div>
                         <div class="col-lg-5">
-                            <div class="tab-image">
+                            <div class="text-center">
                                 <img src="/src/assets/img/product/vscan.png" alt="image">
                             </div>
                         </div>
                 </div>
             </template>
             <template #tab3>
-                <div class="row align-items-center">
+                <div class="row !items-center">
                         <div class="col-lg-7">
                             <div class="tab-solution-content">
                                 <h3>VOffice - Ứng dụng Văn phòng điện tử</h3>
@@ -145,14 +145,14 @@ const tabs = [
                             </div>
                         </div>
                         <div class="col-lg-5">
-                            <div class="tab-image">
+                            <div class="text-center">
                                 <img src="/src/assets/img/product/voffice.png" alt="image">
                             </div>
                         </div>
                 </div>
             </template>
             <template #tab4>
-                <div class="row align-items-center">
+                <div class="row !items-center">
                         <div class="col-lg-7">
                             <div class="tab-solution-content">
                                 <h3>Golden Health - Ứng dụng theo dõi sức khỏe toàn diện</h3>
@@ -187,7 +187,7 @@ const tabs = [
                             </div>
                         </div>
                         <div class="col-lg-5">
-                            <div class="tab-image">
+                            <div class="text-center">
                                 <img src="/src/assets/img/product/golden_health.png" alt="image">
                             </div>
                         </div>

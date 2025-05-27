@@ -38,58 +38,58 @@
                         <nav class="bg-white w-[100%] my-3 font-[quicksand] absolute" :class="{ 'block': isOpen, 'hidden': !isOpen }" v-if="isOpen">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <RouterLink to="/" class="nav-link my-2 ml-8">Trang chủ</RouterLink>
+                                        <RouterLink to="/" class="nav-link mt-4 mb-2.5 ml-8">Trang chủ</RouterLink>
                                     </li>
                                     <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                        <RouterLink to="/ve-chung-toi" class="nav-link my-2 ml-8">Về chúng tôi</RouterLink>
+                                        <RouterLink to="/ve-chung-toi" class="nav-link mt-4 mb-2.5 ml-8">Về chúng tôi</RouterLink>
                                     </li>
                                     <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                        <a class="flex items-center border-t-1px my-2 ml-8 cursor-pointer justify-between border-t-[#dbeefd] no-underline text-[#212529]" @click="isSubmenuOpen = !isSubmenuOpen">Dịch vụ 
+                                        <a class="text-[#677294] flex items-center border-t-1px mt-4 mb-2.5 ml-8 cursor-pointer justify-between border-t-[#dbeefd] no-underline text-[#212529]" @click="isSubmenuOpen = !isSubmenuOpen">Dịch vụ 
                                             <span class="font-700 mr-4">{{ isSubmenuOpen ? '–' : '+' }}</span></a>
                                         <!-- Submenu -->
                                         <transition name="slide">
                                             <ul v-show="isSubmenuOpen" class="p-0 m-0">
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <RouterLink to="/dich-vu/tin-nhan-sms" class="nav-link my-2 ml-16">Tin nhắn SMS</RouterLink>
+                                                    <RouterLink to="/dich-vu/tin-nhan-sms" class="nav-link mt-4 mb-2.5 ml-16">Tin nhắn SMS</RouterLink>
                                                 </li>
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <RouterLink to="/dich-vu/cuoc-goi-thuong-hieu" class="nav-link my-2 ml-16">Cuộc gọi thương hiệu</RouterLink>
+                                                    <RouterLink to="/dich-vu/cuoc-goi-thuong-hieu" class="nav-link mt-4 mb-2.5 ml-16">Cuộc gọi thương hiệu</RouterLink>
                                                 </li>
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <RouterLink to="/dich-vu/dich-vu-gia-tri-gia-tang" class="nav-link my-2 ml-16">Dịch vụ GTGT</RouterLink>
+                                                    <RouterLink to="/dich-vu/dich-vu-gia-tri-gia-tang" class="nav-link mt-4 mb-2.5 ml-16">Dịch vụ GTGT</RouterLink>
                                                 </li>
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <RouterLink to="/dich-vu/phat-trien-ung-dung-va-games" class="nav-link my-2 ml-16">Phát triển ứng dụng và games</RouterLink>
+                                                    <RouterLink to="/dich-vu/phat-trien-ung-dung-va-games" class="nav-link mt-4 mb-2.5 ml-16">Phát triển ứng dụng và games</RouterLink>
                                                 </li>
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <RouterLink to="/dich-vu/van-hanh-he-thong" class="nav-link my-2 ml-16">Vận hành hệ thống</RouterLink>
+                                                    <RouterLink to="/dich-vu/van-hanh-he-thong" class="nav-link mt-4 mb-2.5 ml-16">Vận hành hệ thống</RouterLink>
                                                 </li>
                                             </ul>
                                         </transition>
                                     </li>
                                     <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                        <a class="flex items-center border-t-1px my-2 ml-8 cursor-pointer justify-between border-t-[#dbeefd] no-underline text-[#212529]" @click="isSubmenuOpen2 = !isSubmenuOpen2"><span>Giải pháp</span>
+                                        <a class="text-[#677294] flex items-center border-t-1px mt-4 mb-2.5 ml-8 cursor-pointer justify-between border-t-[#dbeefd] no-underline text-[#212529]" @click="isSubmenuOpen2 = !isSubmenuOpen2"><span>Giải pháp</span>
                                             <span class="font-700 mr-4">{{ isSubmenuOpen2 ? '–' : '+' }}</span>
                                         </a>
                                         <transition name="slide">
                                             <ul v-show="isSubmenuOpen2" class="p-0 m-0">
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <RouterLink to="/giai-phap/tong-dai-voip" class="nav-link my-2 ml-16">Tổng đài VoIP</RouterLink>
+                                                    <RouterLink to="/giai-phap/tong-dai-voip" class="nav-link mt-4 mb-2.5 ml-16">Tổng đài VoIP</RouterLink>
                                                 </li>
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <RouterLink to="/giai-phap/tong-dai-tin-nhan" class="nav-link my-2 ml-16">Tổng đài tin nhắn</RouterLink>
+                                                    <RouterLink to="/giai-phap/tong-dai-tin-nhan" class="nav-link mt-4 mb-2.5 ml-16">Tổng đài tin nhắn</RouterLink>
                                                 </li>
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <RouterLink to="/giai-phap/thu-dien-tu" class="nav-link my-2 ml-16">Thư điện tử</RouterLink>
+                                                    <RouterLink to="/giai-phap/thu-dien-tu" class="nav-link mt-4 mb-2.5 ml-16">Thư điện tử</RouterLink>
                                                 </li>
                                             </ul>
                                         </transition>
                                     </li>
                                     <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                            <RouterLink to="/lien-he" class="nav-link my-2 ml-8">Tuyển dụng</RouterLink>
+                                            <RouterLink to="/lien-he" class="nav-link mt-4 mb-2.5 ml-8">Tuyển dụng</RouterLink>
                                         </li>
                                     <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                        <RouterLink to="/lien-he" class="nav-link my-2 ml-8">Liên hệ</RouterLink>
+                                        <RouterLink to="/lien-he" class="nav-link mt-4 mb-2.5 ml-8">Liên hệ</RouterLink>
                                     </li>
                                 </ul>
                         </nav>
@@ -100,13 +100,13 @@
         </div>
         <div class="techvia-nav font-[quicksand]">
             <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light">
+                <nav class="navbar md:![flex-wrap:nowrap] md:!justify-start">
                     <RouterLink class="navbar-brand" to="/">
                         <img src="/src/assets/logo.png" class="white-logo" alt="logo">
                         <img src="/src/assets/logo-black.png" class="black-logo" alt="logo">
                     </RouterLink>
                     <div class="md:!flex md:basis-auto basis-100% grow-1 items-center" style="display: block;">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav md:![flex-direction:row]">
                             <li class="nav-item">
                                 <RouterLink to="/" class="nav-link">Trang chủ</RouterLink>
                             </li>

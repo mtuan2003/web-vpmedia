@@ -4,66 +4,53 @@ const particlesOptions = {
     enable: false
   },
   particles: {
-    number: {
-      value: 110,
-      density: {
-        enable: true,
-        value_area: 600
-      }
-    },
     color: {
-      value: "#ddd"
-    },
-    shape: {
-      type: "circle",
-      stroke: {
-        width: 0,
-        color: "#888888"
-      },
-      polygon: {
-        nb_sides: 5
-      },
-    },
-    opacity: {
-      value: 0.7,
-      random: false,
-      anim: {
-        enable: true,
-        speed: 1,
-        opacity_min: 0,
-        sync: false
-      }
-    },
-    size: {
-      value: 3,
-      random: false,
-      anim: {
-        enable: true,
-        speed: 5,
-        size_min: 0.3,
-        sync: false
-      }
-    },
-    line_linked: {
-      enable: false,
-      distance: 150,
-      color: "#555",
-      opacity: 0.05,
-      width: 1
+      value: "#ffffff"
     },
     move: {
       enable: true,
-      speed: 10,
+      speed: 5,
       direction: "none",
-      random: true,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-      attract: {
-        enable: false,
-        rotateX: 600,
-        rotateY: 1200
+      outModes: {
+        default: "out"
       }
+    },
+    number: {
+      value: 400,
+      density: {
+        enable: true,
+        width: 1920,
+        height: 1080
+      },
+    },
+    opacity: {
+      value: { min: 0.1, max: 0.5 },
+      animation: {
+        enable: true,
+        speed: 5,
+        sync: false,
+        startValue: "random",
+        mode: "auto"
+      }
+    },
+    shape: {
+      type: "circle"
+    },
+    size: {
+      value: { min: 1, max: 3 },
+      animation: {
+        enable: true,
+        sync: false,
+        startValue: "random",
+        mode: "auto"
+      }
+    }
+  },
+  motion: {
+    disable: false,
+    reduce: {
+      factor: 4,
+      value: true
     }
   },
   interactivity: {

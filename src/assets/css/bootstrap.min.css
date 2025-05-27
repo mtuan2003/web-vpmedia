@@ -12,7 +12,6 @@
     --bs-body-bg: #fff;
     --bs-emphasis-color: #000;
     --bs-emphasis-color-rgb: 0,0,0;
-    --bs-heading-color: inherit;
     --bs-link-color-rgb: 13,110,253;
     --bs-link-hover-color-rgb: 10,88,202;
     --bs-border-width: 1px;
@@ -27,7 +26,6 @@
     --bs-body-bg: #212529;
     --bs-emphasis-color: #fff;
     --bs-emphasis-color-rgb: 255,255,255;
-    --bs-heading-color: inherit;
     --bs-link-color-rgb: 110,168,254;
     --bs-link-hover-color-rgb: 139,185,254;
     --bs-border-color: #495057;
@@ -49,12 +47,11 @@ body {
     -webkit-tap-highlight-color: transparent
 }
 
-.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
     margin-bottom: .5rem;
     font-weight: 500;
     line-height: 1.2;
-    color: var(--bs-heading-color)
 }
 
 .h1,h1 {
@@ -198,12 +195,6 @@ button,input,optgroup,select,textarea {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
-    .form-control {
-        transition: none
-    }
-}
-
 .form-control:focus {
     color: var(--bs-body-color);
     background-color: var(--bs-body-bg);
@@ -219,17 +210,11 @@ textarea.form-control {
 .nav-link {
     display: block;
     padding: var(0.5rem) var(1.5rem);
-    color: var(--bs-nav-link-color);
+    color: #677294;
     text-decoration: none;
     background: 0 0;
     border: 0;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out
-}
-
-@media (prefers-reduced-motion:reduce) {
-    .nav-link {
-        transition: none
-    }
 }
 
 .nav-link:focus,.nav-link:hover {
@@ -288,15 +273,4 @@ textarea.form-control {
 
 .navbar-nav .nav-link.active,.navbar-nav .nav-link.show {
     color: var(--bs-navbar-active-color)
-}
-
-@media (min-width: 768px) {
-    .navbar-expand-md {
-        flex-wrap:nowrap;
-        justify-content: flex-start
-    }
-
-    .navbar-expand-md .navbar-nav {
-        flex-direction: row
-    }
 }

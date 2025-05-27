@@ -4,6 +4,7 @@
         <li
           v-for="(tab, idx) in tabs"
           :key="idx"
+          class="max-sm:!w-100% max-sm:!mr-0"
           :class="currentIndex === idx ? 'current' : ''"
         >
         <a class="no-underline cursor-pointer" @click="currentIndex = idx"><span>{{ tab.label }}</span></a>
@@ -26,7 +27,7 @@
   </template>
   
 <script setup>
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
   
 const props = defineProps({
     tabs: {

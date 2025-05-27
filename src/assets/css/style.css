@@ -865,13 +865,6 @@ form textarea.form-control {
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-	 .tabs li {
-		width: 100%;
-		margin-right: 0;
-	}
-}
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.other-option {
 		display: none;

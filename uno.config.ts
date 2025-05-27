@@ -30,8 +30,8 @@ export default defineConfig({
     'd-table-cell' : '!table-cell align-middle',
     'li-page-title' : 'before:content-[""] before:absolute before:right--13px before:top-11px before:w-6px before:h-6px before:rounded-[50%] before:bg-[#ec5a26]',
     // about us
-    'col-50' : 'flex-[0_0_auto] w-[50%]',
-    'col-100' : 'flex-[0_0_auto] w-[100%]',
+    'col-50' : '!flex-[0_0_auto] !w-[50%]',
+    'col-100' : '!flex-[0_0_auto] !w-[100%]',
     'hire-before' : 'before:content-[""] before:absolute before:z--1 before:left-0 before:top-0 before:h-100% before:w-100% before:bg-[#03030c] before:opacity-60',
     'form-input' : 'bg-[#ffffff] border-none h-55px text-16px border-l-3px border-l-solid border-l-[#142b73] shadow-[0px_5px_30px_0px_rgba(148,146,245,0.15)]',
     'form-focus' : 'focus:border-l-3px focus:border-l-solid focus:border-l-[#142b73] focus:shadow-[none]',

@@ -1,7 +1,7 @@
 <template>
   <section class="relative z-1 px-0 py-100px">
     <div class="container max-lg:row lg:!flex !items-center">
-      <div class="lg:col-50 max-lg:col-100 mx-4">
+      <div class="lg:col-50 md:col-100 px-4">
           <h6
             class="pl-0 text-[#142b73] text-16px font-700 mb-10px uppercase tracking-0.5px max-md:mt-10"
           >
@@ -35,9 +35,9 @@
 
         </div>
       </div>
-      <div class="lg:col-50 max-lg:col-100 mx-4">
-        <div class="relative text-center ml-0 max-lg:mt-8.75 w-100%">
-          <img src="/src/assets/img/about.jpg" alt="About image" class="rounded-5px" />
+      <div class="lg:col-50 md:col-100 px-4 ">
+        <div class="relative max-lg:text-center ml-0 max-lg:mt-8.75">
+          <img src="/src/assets/img/about.jpg" alt="About image" class="rounded-5px max-lg:w-100%" />
           <div class="absolute left-0 right-0 bottom-20px px-5px py-5px rounded-[10px] max-w-370px flex justify-start items-center bg-[#ffffff] shadow-[0_0_15px_rgba(0,0,0,0.05)] ml-auto mr-auto max-xs:!hidden">
             <img src="/src/assets/img/about-sub.jpg" class="max-w-135px rounded-[10px] mr-5" alt="About Images" />
             <div class="text-left">

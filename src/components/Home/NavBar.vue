@@ -4,10 +4,10 @@
             <div class="container">
                 <div class="techvia-responsive-menu">
                     <div class="logo flex">
-                        <a href="/">
+                        <RouterLink to="/">
                             <img src="/src/assets/logo.png" class="white-logo" alt="logo">
                             <img src="/src/assets/logo-black.png" class="black-logo" alt="logo">
-                        </a>
+                        </RouterLink>
                     </div>
                     <!-- Button toggle menu -->
                     <transition name="slide-left" mode="out-in">
@@ -38,10 +38,10 @@
                         <nav class="bg-white w-[100%] my-3 font-[quicksand] absolute" :class="{ 'block': isOpen, 'hidden': !isOpen }" v-if="isOpen">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a href="/" class="nav-link my-2 ml-8">Trang chủ</a>
+                                        <RouterLink to="/" class="nav-link my-2 ml-8">Trang chủ</RouterLink>
                                     </li>
                                     <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                        <a href="/ve-chung-toi" class="nav-link my-2 ml-8">Về chúng tôi</a>
+                                        <RouterLink to="/ve-chung-toi" class="nav-link my-2 ml-8">Về chúng tôi</RouterLink>
                                     </li>
                                     <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
                                         <a class="flex items-center border-t-1px my-2 ml-8 cursor-pointer justify-between border-t-[#dbeefd] no-underline text-[#212529]" @click="isSubmenuOpen = !isSubmenuOpen">Dịch vụ 
@@ -50,19 +50,19 @@
                                         <transition name="slide">
                                             <ul v-show="isSubmenuOpen" class="p-0 m-0">
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <a href="/dich-vu/tin-nhan-sms" class="nav-link my-2 ml-16">Tin nhắn SMS</a>
+                                                    <RouterLink to="/dich-vu/tin-nhan-sms" class="nav-link my-2 ml-16">Tin nhắn SMS</RouterLink>
                                                 </li>
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <a href="/dich-vu/cuoc-goi-thuong-hieu" class="nav-link my-2 ml-16">Cuộc gọi thương hiệu</a>
+                                                    <RouterLink to="/dich-vu/cuoc-goi-thuong-hieu" class="nav-link my-2 ml-16">Cuộc gọi thương hiệu</RouterLink>
                                                 </li>
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <a href="/dich-vu/dich-vu-gia-tri-gia-tang" class="nav-link my-2 ml-16">Dịch vụ GTGT</a>
+                                                    <RouterLink to="/dich-vu/dich-vu-gia-tri-gia-tang" class="nav-link my-2 ml-16">Dịch vụ GTGT</RouterLink>
                                                 </li>
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <a href="/dich-vu/phat-trien-ung-dung-va-games" class="nav-link my-2 ml-16">Phát triển ứng dụng và games</a>
+                                                    <RouterLink to="/dich-vu/phat-trien-ung-dung-va-games" class="nav-link my-2 ml-16">Phát triển ứng dụng và games</RouterLink>
                                                 </li>
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <a href="/dich-vu/van-hanh-he-thong" class="nav-link my-2 ml-16">Vận hành hệ thống</a>
+                                                    <RouterLink to="/dich-vu/van-hanh-he-thong" class="nav-link my-2 ml-16">Vận hành hệ thống</RouterLink>
                                                 </li>
                                             </ul>
                                         </transition>
@@ -74,22 +74,22 @@
                                         <transition name="slide">
                                             <ul v-show="isSubmenuOpen2" class="p-0 m-0">
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <a href="/giai-phap/tong-dai-voip" class="nav-link my-2 ml-16">Tổng đài VoIP</a>
+                                                    <RouterLink to="/giai-phap/tong-dai-voip" class="nav-link my-2 ml-16">Tổng đài VoIP</RouterLink>
                                                 </li>
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <a href="/giai-phap/tong-dai-tin-nhan" class="nav-link my-2 ml-16">Tổng đài tin nhắn</a>
+                                                    <RouterLink to="/giai-phap/tong-dai-tin-nhan" class="nav-link my-2 ml-16">Tổng đài tin nhắn</RouterLink>
                                                 </li>
                                                 <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                                    <a href="/giai-phap/thu-dien-tu" class="nav-link my-2 ml-16">Thư điện tử</a>
+                                                    <RouterLink to="/giai-phap/thu-dien-tu" class="nav-link my-2 ml-16">Thư điện tử</RouterLink>
                                                 </li>
                                             </ul>
                                         </transition>
                                     </li>
                                     <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                            <a href="/lien-he" class="nav-link my-2 ml-8">Tuyển dụng</a>
+                                            <RouterLink to="/lien-he" class="nav-link my-2 ml-8">Tuyển dụng</RouterLink>
                                         </li>
                                     <li class="nav-item border-t-1px border-t-solid border-t-[#dbeefd]">
-                                        <a href="/lien-he" class="nav-link my-2 ml-8">Liên hệ</a>
+                                        <RouterLink to="/lien-he" class="nav-link my-2 ml-8">Liên hệ</RouterLink>
                                     </li>
                                 </ul>
                         </nav>
@@ -101,36 +101,36 @@
         <div class="techvia-nav font-[quicksand]">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="/">
+                    <RouterLink class="navbar-brand" to="/">
                         <img src="/src/assets/logo.png" class="white-logo" alt="logo">
                         <img src="/src/assets/logo-black.png" class="black-logo" alt="logo">
-                    </a>
+                    </RouterLink>
                     <div class="md:!flex md:basis-auto basis-100% grow-1 items-center" style="display: block;">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="/" class="nav-link">Trang chủ</a>
+                                <RouterLink to="/" class="nav-link">Trang chủ</RouterLink>
                             </li>
                             <li class="nav-item">
-                                <a href="/ve-chung-toi" class="nav-link">Về chúng tôi</a>
+                                <RouterLink to="/ve-chung-toi" class="nav-link">Về chúng tôi</RouterLink>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Dịch vụ <font-awesome-icon icon="fas fa-chevron-down" class="h-2.5 w-2.1875 mb-0.75 justify-center"/></a>
                                 <ul class="dropdown-menu">
 
                                     <li class="nav-item">
-                                        <a href="/dich-vu/tin-nhan-sms" class="nav-link">Tin nhắn SMS</a>
+                                        <RouterLink to="/dich-vu/tin-nhan-sms" class="nav-link">Tin nhắn SMS</RouterLink>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="/dich-vu/cuoc-goi-thuong-hieu" class="nav-link">Cuộc gọi thương hiệu</a>
+                                        <RouterLink to="/dich-vu/cuoc-goi-thuong-hieu" class="nav-link">Cuộc gọi thương hiệu</RouterLink>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="/dich-vu/dich-vu-gia-tri-gia-tang" class="nav-link">Dịch vụ GTGT</a>
+                                        <RouterLink to="/dich-vu/dich-vu-gia-tri-gia-tang" class="nav-link">Dịch vụ GTGT</RouterLink>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="/dich-vu/phat-trien-ung-dung-va-games" class="nav-link">Phát triển ứng dụng và games</a>
+                                        <RouterLink to="/dich-vu/phat-trien-ung-dung-va-games" class="nav-link">Phát triển ứng dụng và games</RouterLink>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="/dich-vu/van-hanh-he-thong" class="nav-link">Vận hành hệ thống</a>
+                                        <RouterLink to="/dich-vu/van-hanh-he-thong" class="nav-link">Vận hành hệ thống</RouterLink>
                                     </li>
                                 </ul>
                             </li>
@@ -138,23 +138,23 @@
                                 <a href="#" class="nav-link">Giải pháp <font-awesome-icon icon="fas fa-chevron-down" class="h-2.5 w-2.1875 mb-0.75 justify-center"/></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="/giai-phap/tong-dai-voip" class="nav-link">Tổng đài VoIP</a>
+                                        <RouterLink to="/giai-phap/tong-dai-voip" class="nav-link">Tổng đài VoIP</RouterLink>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="/giai-phap/tong-dai-tin-nhan" class="nav-link">Tổng đài tin nhắn</a>
+                                        <RouterLink to="/giai-phap/tong-dai-tin-nhan" class="nav-link">Tổng đài tin nhắn</RouterLink>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="/giai-phap/thu-dien-tu" class="nav-link">Thư điện tử</a>
+                                        <RouterLink to="/giai-phap/thu-dien-tu" class="nav-link">Thư điện tử</RouterLink>
                                     </li>
 
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                    <a href="/lien-he" class="nav-link">Tuyển dụng</a>
+                                    <RouterLink to="/lien-he" class="nav-link">Tuyển dụng</RouterLink>
                                 </li>
                             <li class="nav-item">
-                                <a href="/lien-he" class="nav-link">Liên hệ</a>
+                                <RouterLink to="/lien-he" class="nav-link">Liên hệ</RouterLink>
                             </li>
                         </ul>
                         <div class="other-option">

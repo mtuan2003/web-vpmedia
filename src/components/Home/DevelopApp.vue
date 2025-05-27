@@ -12,7 +12,7 @@ const tabs = [
     <section class="text-[#ffffff] bg-[#fafbfc] px-0 py-100px">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-md-12">
+            <div class="col-66lg lg:!ml-16.66666667%">
                 <div class="text-20px text-center mb-65px lh-normal">
                     <h6 class="text-16px font-700 text-[#ec5a26] tracking-0.5px uppercase">Ứng Dụng Chúng Tôi Đã Phát Triển</h6>
                     <h2 class="text-30px text-[#0b0b31] mt-10px mb-0 ml-0 mr-0 font-700 uppercase">Chúng tôi tự hào giới thiệu các ứng dụng tiêu biểu.</h2>
@@ -21,8 +21,8 @@ const tabs = [
         </div>
         <Tab :tabs="tabs">
             <template #tab1>
-                <div class="row !items-center">
-                        <div class="col-lg-7">
+                <div class="row !items-center mx--3">
+                        <div class="col-58lg">
                             <div class="tab-solution-content">
                                 <h3>VBot - Tổng đài AI đa tính năng</h3>
                                 <p>
@@ -59,7 +59,7 @@ const tabs = [
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5">
+                        <div class="col-41lg">
                             <div class="text-center">
                                 <img src="/src/assets/img/product/vbot.png" alt="image">
                             </div>
@@ -67,8 +67,8 @@ const tabs = [
                 </div>
             </template>
             <template #tab2>
-                <div class="row !items-center">
-                        <div class="col-lg-7">
+                <div class="row !items-center mx--3">
+                        <div class="col-58lg">
                             <div class="tab-solution-content">
                                 <h3>VScan - Ứng dụng quét tài liệu thông minh</h3>
                                 <p>
@@ -101,7 +101,7 @@ const tabs = [
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-5">
+                        <div class="col-41lg">
                             <div class="text-center">
                                 <img src="/src/assets/img/product/vscan.png" alt="image">
                             </div>
@@ -109,8 +109,8 @@ const tabs = [
                 </div>
             </template>
             <template #tab3>
-                <div class="row !items-center">
-                        <div class="col-lg-7">
+                <div class="row !items-center mx--3">
+                        <div class="col-58lg">
                             <div class="tab-solution-content">
                                 <h3>VOffice - Ứng dụng Văn phòng điện tử</h3>
                                 <p>
@@ -144,7 +144,7 @@ const tabs = [
 
                             </div>
                         </div>
-                        <div class="col-lg-5">
+                        <div class="col-41lg">
                             <div class="text-center">
                                 <img src="/src/assets/img/product/voffice.png" alt="image">
                             </div>
@@ -152,8 +152,8 @@ const tabs = [
                 </div>
             </template>
             <template #tab4>
-                <div class="row !items-center">
-                        <div class="col-lg-7">
+                <div class="row !items-center mx--3">
+                        <div class="col-58lg">
                             <div class="tab-solution-content">
                                 <h3>Golden Health - Ứng dụng theo dõi sức khỏe toàn diện</h3>
                                 <p>
@@ -186,7 +186,7 @@ const tabs = [
 
                             </div>
                         </div>
-                        <div class="col-lg-5">
+                        <div class="col-41lg">
                             <div class="text-center">
                                 <img src="/src/assets/img/product/golden_health.png" alt="image">
                             </div>

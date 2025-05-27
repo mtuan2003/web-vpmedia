@@ -19,18 +19,20 @@
             như vươn ra ngoài thế giới.
           </p>
           <div class="mt-8.75">
-            <a
+            <RouterLink to="/ve-chung-toi">
+              <a
               class="default-btn no-underline font-[quicksand]"
               @mouseenter="updatePosition"
               @mouseleave="updatePosition"
               ref="buttonRef"
-              href="/ve-chung-toi"
               >Xem thêm
               <span
                 ref="spanRef"
                 class="absolute pointer-events-none transition-all duration-300"
               ></span>
             </a>
+            </RouterLink>
+
         </div>
       </div>
       <div class="lg:col-50 max-lg:col-100 mx-4">

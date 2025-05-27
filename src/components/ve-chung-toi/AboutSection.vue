@@ -1,7 +1,6 @@
 <template>
-  <section class="relative z-1 px-0 py-100px container row !items-center">
-    <div class="lg:!flex">
-      <div class="lg:flex-[0_0_auto] lg:w-66.66666667% md:flex-[0_0_auto] md:w-100% px-3">
+  <section class="relative z-1 !px-0 py-100px container row !items-center lg:!flex">
+      <div class="lg:!flex-[0_0_auto] lg:!w-66.66666667% md:flex-[0_0_auto] md:w-100% px-3">
         <h3 class="font-700">Giới thiệu</h3>
         <p>
           CÔNG TY CỔ PHẦN CÔNG NGHỆ TRUYỀN THÔNG VIỆT PHÁT (VPMEDIA) chuyên về
@@ -58,7 +57,7 @@
         </p>
         <p>VPMEDIA – Đồng hành cùng doanh nghiệp trên hành trình số hóa!</p>
       </div>
-      <div class="lg:flex-[0_0_auto] lg:w-33.33333333% md:flex-[0_0_auto] md:w-100% px-3 mb-auto">
+      <div class="lg:!flex-[0_0_auto] lg:!w-33.33333333% md:flex-[0_0_auto] md:w-100% px-3 mb-auto">
         <div class="relative text-center ml-0 max-lg:mt-8.75 w-100%">
           <img
             src="/src/assets/img/about.jpg"
@@ -82,6 +81,5 @@
           </div>
         </div>
       </div>
-    </div>
   </section>
 </template>

@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../pages/index.vue';
+import AboutUs from '../pages/ve-chung-toi.vue';
+import Contact from '../pages/lien-he.vue';
 
 const routes = [
   {
@@ -10,13 +12,13 @@ const routes = [
   {
     path: '/ve-chung-toi',
     name: 've-chung-toi',
-    component: () => import('../pages/ve-chung-toi.vue'),
+    component: AboutUs,
     meta : { title : 'VPMEDIA - Về chúng tôi'}
   },
   {
     path: '/lien-he',
     name: 'lien-he',
-    component: () => import('../pages/lien-he.vue'),
+    component: Contact,
     meta : { title : 'VPMEDIA - Liên hệ'}
   },
   {

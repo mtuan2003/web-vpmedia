@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-50maxlgsm">
                 <div class="single-services-item">
                     <div class="services-icon">
                         <i class="content-[''] inline-block h-50px w-50px bg-[url(/src/assets/img/service/van-hanh-he-thong.png)] bg-[length:cover]"></i>
@@ -22,11 +22,11 @@
                     </p>
        
                     <div class="services-btn-link">
-                        <a href="/dich-vu/van-hanh-he-thong" class="services-link">Chi tiết</a>
+                        <RouterLink to="/dich-vu/van-hanh-he-thong" class="services-link">Chi tiết</RouterLink>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-50maxlgsm">
                 <div class="single-services-item">
                     <div class="services-icon">
                         <i class="content-[''] inline-block h-50px w-50px bg-[url(/src/assets/img/service/tin-nhan-sms.png)] bg-[length:cover]"></i>
@@ -37,11 +37,11 @@
                         thông báo giao dịch với độ tin cậy cao, tốc độ nhanh và chi phí hợp lý.
                     </p>
                     <div class="services-btn-link">
-                        <a href="/dich-vu/tin-nhan-sms" class="services-link">Chi tiết</a>
+                        <RouterLink to="/dich-vu/tin-nhan-sms" class="services-link">Chi tiết</RouterLink>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-50maxlgsm">
                 <div class="single-services-item">
                     <div class="services-icon">
                         <i class="content-[''] inline-block h-50px w-50px bg-[url(/src/assets/img/service/cuoc-goi-thuong-hieu.png)] bg-[length:cover]"></i>
@@ -52,11 +52,11 @@
                         hiệu, giúp tăng độ nhận diện, tin cậy và hiệu quả tiếp cận khách hàng.
                     </p>
                     <div class="services-btn-link">
-                        <a href="/dich-vu/cuoc-goi-thuong-hieu" class="services-link">Chi tiết</a>
+                        <RouterLink to="/dich-vu/cuoc-goi-thuong-hieu" class="services-link">Chi tiết</RouterLink>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-50maxlgsm">
                 <div class="single-services-item">
                     <div class="services-icon">
                         <i class="content-[''] inline-block h-50px w-50px bg-[url(/src/assets/img/service/dich-vu-gia-tri-gia-tang.png)] bg-[length:cover]"></i>
@@ -68,11 +68,11 @@
                         nâng cao trải nghiệm người dùng.
                     </p>
                     <div class="services-btn-link">
-                        <a href="/dich-vu/dich-vu-gia-tri-gia-tang" class="services-link">Chi tiết</a>
+                        <RouterLink to="/dich-vu/dich-vu-gia-tri-gia-tang" class="services-link">Chi tiết</RouterLink>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-50maxlgsm">
                 <div class="single-services-item">
                     <div class="services-icon">
                         <i class="content-[''] inline-block h-50px w-50px bg-[url(/src/assets/img/service/phat-trien-ung-dung-va-games.png)] bg-[length:cover]"></i>
@@ -84,11 +84,11 @@
                         trực tuyến.
                     </p>
                     <div class="services-btn-link">
-                        <a href="/dich-vu/phat-trien-ung-dung-va-games" class="services-link">Chi tiết</a>
+                        <RouterLink to="/dich-vu/phat-trien-ung-dung-va-games" class="services-link">Chi tiết</RouterLink>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-50maxlgsm">
                 <div class="single-services-item">
                     <div class="services-icon">
                         <i class="content-[''] inline-block h-50px w-50px bg-[url(/src/assets/img/service/giai-phap-tong-dai.png)] bg-[length:cover]"></i>
@@ -98,7 +98,7 @@
                         Cung cấp và triển khai tổng đài IP (VoIP) giúp doanh nghiệp tối ưu chi phí, nâng cao hiệu suất và cải thiện trải nghiệm khách hàng. Hỗ trợ gọi nội bộ miễn phí, ghi âm, IVR, báo cáo chi tiết và tích hợp CRM.
                     </p>
                     <div class="services-btn-link">
-                        <a href="/giai-phap/tong-dai-voip" class="services-link">Chi tiết</a>
+                        <RouterLink to="/giai-phap/tong-dai-voip" class="services-link">Chi tiết</RouterLink>
                     </div>
                 </div>
             </div>

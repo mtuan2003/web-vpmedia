@@ -3,7 +3,7 @@
         <div class="pt-25 pb-25">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="col-lg-4 col-50maxlgsm">
                         <div class="max-md:mb-35px max-lg:px-0 max-lg:py-15px">
                             <a class="inline-block mb-6.25" href="#">
                                 <img src="/src/assets/img/logo.png" class="white-logo" alt="logo">
@@ -12,21 +12,21 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="col-lg-4 col-50maxlgsm">
                         <div class="max-md:mb-35px max-lg:px-0 max-lg:py-15px font-[quicksand]">
                             <div class="mb-6.25 max-md:mb-5">
                                 <h3 class="text-20px text-[#ffffff] font-600 mt-0 mb-0 ml-0 mr-0 relative border-b-1px border-b-solid border-b-[#777] pb-10px">Dịch vụ</h3>
                             </div>
                             <ul class="pl-0 mb-0">
-                                <li class="max-lg:last-pb-25px list-none pb-18px last-pb-0"> <a class="inline-block text-[#ececec] font-400 text-4 no-underline hover:underline hover:text-[#142b73] transition-duration-0.4s" href="/giai-phap/tong-dai-voip">Giải pháp tổng đài VoIP</a></li>
-                                <li class="max-lg:last-pb-25px list-none pb-18px last-pb-0"> <a class="inline-block text-[#ececec] font-400 text-4 no-underline hover:underline hover:text-[#142b73] transition-duration-0.4s" href="/dich-vu/cuoc-goi-thuong-hieu">Cuộc gọi thương hiệu</a></li>
-                                <li class="max-lg:last-pb-25px list-none pb-18px last-pb-0"> <a class="inline-block text-[#ececec] font-400 text-4 no-underline hover:underline hover:text-[#142b73] transition-duration-0.4s" href="/dich-vu/dich-vu-gia-tri-gia-tang">Dịch vụ GTGT</a></li>
-                                <li class="max-lg:last-pb-25px list-none pb-18px last-pb-0"> <a class="inline-block text-[#ececec] font-400 text-4 no-underline hover:underline hover:text-[#142b73] transition-duration-0.4s" href="/dich-vu/phat-trien-ung-dung-va-games">Phát triển ứng dụng và games</a></li>
-                                <li class="max-lg:last-pb-25px list-none pb-18px last-pb-0"> <a class="inline-block text-[#ececec] font-400 text-4 no-underline hover:underline hover:text-[#142b73] transition-duration-0.4s" href="/dich-vu/van-hanh-he-thong">Vận hành hệ thống</a></li>
+                                <li class="max-lg:last-pb-25px list-none pb-18px last-pb-0"> <RouterLink class="inline-block text-[#ececec] font-400 text-4 no-underline hover:underline hover:text-[#142b73] transition-duration-0.4s" to="/giai-phap/tong-dai-voip">Giải pháp tổng đài VoIP</RouterLink></li>
+                                <li class="max-lg:last-pb-25px list-none pb-18px last-pb-0"> <RouterLink class="inline-block text-[#ececec] font-400 text-4 no-underline hover:underline hover:text-[#142b73] transition-duration-0.4s" to="/dich-vu/cuoc-goi-thuong-hieu">Cuộc gọi thương hiệu</RouterLink></li>
+                                <li class="max-lg:last-pb-25px list-none pb-18px last-pb-0"> <RouterLink class="inline-block text-[#ececec] font-400 text-4 no-underline hover:underline hover:text-[#142b73] transition-duration-0.4s" to="/dich-vu/dich-vu-gia-tri-gia-tang">Dịch vụ GTGT</RouterLink></li>
+                                <li class="max-lg:last-pb-25px list-none pb-18px last-pb-0"> <RouterLink class="inline-block text-[#ececec] font-400 text-4 no-underline hover:underline hover:text-[#142b73] transition-duration-0.4s" to="/dich-vu/phat-trien-ung-dung-va-games">Phát triển ứng dụng và games</RouterLink></li>
+                                <li class="max-lg:last-pb-25px list-none pb-18px last-pb-0"> <RouterLink class="inline-block text-[#ececec] font-400 text-4 no-underline hover:underline hover:text-[#142b73] transition-duration-0.4s" to="/dich-vu/van-hanh-he-thong">Vận hành hệ thống</RouterLink></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 font-[quicksand]">
+                    <div class="col-lg-4 col-50maxlgsm font-[quicksand]">
                         <div class="max-md:mb-35px max-lg:px-0 max-lg:py-15px max-md:pt-4">
                             <div class="mb-6.25 max-md:mb-5">
                                 <h3 class="text-20px text-[#ffffff] font-600 mt-0 mb-0 ml-0 mr-0 relative border-b-1px border-b-solid border-b-[#777] pb-10px">Liên hệ</h3>

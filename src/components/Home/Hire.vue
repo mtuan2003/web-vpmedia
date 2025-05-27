@@ -2,7 +2,7 @@
     <section class="hire-before bg-[url(/src/assets/img/banner-bg.jpg)] relative z-1 bg-[position:center-center] bg-[length:cover] bg-no-repeat text-center px-0 py-70px">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-md-12">
+            <div class="col-66lg lg:!ml-16.66666667%">
                 <h6 class="h-24px text-4 font-700 text-[#ec5a26] tracking-0.5px uppercase">Hợp tác cùng chúng tôi?</h6>
                 <h2 class="max-xs:text-30px text-33px text-[#fff] m-0 font-700 uppercase">Ứng dụng công nghệ để nâng cao trải nghiệm</h2>
                 <p class="text-[#fff] text-17.7px mt-20px mb-0 ml-0 mr-0 max-lg:text-15px">
@@ -11,13 +11,15 @@
                     vững và đột phá trong kỷ nguyên số.
                 </p>
                 <div class="mt-5 mr-3.75 max-md:ml-0">
-                    <a class="default-btn-one max-md:ml-2.5 no-underline font-[quicksand]"
+                    <RouterLink to="/lien-he">
+                        <a class="default-btn-one max-md:ml-2.5 no-underline font-[quicksand]"
                     @mouseenter="updatePosition"
                     @mouseleave="updatePosition" ref="buttonRef"
-                    href="/lien-he">Liên hệ với chúng tôi
+                    >Liên hệ với chúng tôi
                         <span ref="spanRef"
                         class="absolute pointer-events-none transition-all duration-300"></span>
                     </a>
+                    </RouterLink>
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@
         <div class="pt-25 pb-25">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-50maxlgsm">
+                    <div class="col-33lg col-50maxlgsm">
                         <div class="max-md:mb-35px max-lg:px-0 max-lg:py-15px">
                             <a class="inline-block mb-6.25" href="#">
                                 <img src="/src/assets/img/logo.png" class="white-logo" alt="logo">
@@ -12,7 +12,7 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-50maxlgsm">
+                    <div class="col-33lg col-50maxlgsm">
                         <div class="max-md:mb-35px max-lg:px-0 max-lg:py-15px font-[quicksand]">
                             <div class="mb-6.25 max-md:mb-5">
                                 <h3 class="text-20px text-[#ffffff] font-600 mt-0 mb-0 ml-0 mr-0 relative border-b-1px border-b-solid border-b-[#777] pb-10px">Dịch vụ</h3>
@@ -26,7 +26,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-50maxlgsm font-[quicksand]">
+                    <div class="col-33lg col-50maxlgsm font-[quicksand]">
                         <div class="max-md:mb-35px max-lg:px-0 max-lg:py-15px max-md:pt-4">
                             <div class="mb-6.25 max-md:mb-5">
                                 <h3 class="text-20px text-[#ffffff] font-600 mt-0 mb-0 ml-0 mr-0 relative border-b-1px border-b-solid border-b-[#777] pb-10px">Liên hệ</h3>

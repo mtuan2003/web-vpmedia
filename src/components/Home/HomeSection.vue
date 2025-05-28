@@ -16,7 +16,7 @@ const particlesOptions = {
       }
     },
     number: {
-      value: 400,
+      value: 200,
       density: {
         enable: true,
         width: 1920,
@@ -135,9 +135,9 @@ const updatePosition2 = (e) => {
         :options="particlesOptions"/>
       <div class="d-table">
           <div class="d-table-cell">
-              <div class="container !px-0">
+              <div class="container">
                   <div class="row !items-center flex flex-wrap">
-                      <div class="col-50lg">
+                      <div class="col-50lg !pr-3">
                           <div class="pt-12.5 relative z-10">
                               <h1 class="text-12.5 max-md:text-10 text-[#ffffff] md:[margin:0_0_20px_0] max-md:[margin:0_0_15px_0] font-700 uppercase lh-70px max-md:lh-56px max-lg:text-center">Giải pháp CNTT thông minh cho doanh nghiệp của bạn</h1>
                               <p class="text-[#ffffff] text-4 m-0 max-lg:text-center">
@@ -162,7 +162,7 @@ const updatePosition2 = (e) => {
                               </div>
                           </div>
                       </div>
-                      <div class="col-50lg">
+                      <div class="col-50lg !pr-0 !pl-3">
                           <div class="text-center pt-12.5 relative z-10">
                               <img src="/src/assets/img/home.png" alt="image">
                           </div>
@@ -172,7 +172,7 @@ const updatePosition2 = (e) => {
           </div>
       </div>
       <div class="absolute bottom--5px left-0 w-[100%] h-auto z-1">
-          <img src="/src/assets/home-wave-bg.svg" alt="svg shape">
+          <img src="/src/assets/img/home-wave-bg.svg" alt="svg shape">
       </div>
   </div>
 </template>

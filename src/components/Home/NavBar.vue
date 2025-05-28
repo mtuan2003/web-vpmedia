@@ -1,12 +1,13 @@
 <template>
-    <div class="navbar-section max-lg:shadow-[rgba(0,0,0,0.11)_0px_5px_40px_0px]">
-        <div class="techvia-responsive-nav">
+    <div class="navbar-section max-lg:py-5 max-lg:shadow-[rgba(0,0,0,0.11)_0px_5px_40px_0px]">
+        <!-- mobile -->
+        <div class="max-lg:block lg:hidden">
             <div class="container">
-                <div class="techvia-responsive-menu">
+                <div class="max-lg:relative">
                     <div class="logo flex">
                         <RouterLink to="/">
-                            <img src="/src/assets/logo.png" class="white-logo" alt="logo">
-                            <img src="/src/assets/logo-black.png" class="black-logo" alt="logo">
+                            <img src="/src/assets/img/logo.png" class="white-logo" alt="logo">
+                            <img src="/src/assets/img/logo-black.png" class="black-logo" alt="logo">
                         </RouterLink>
                     </div>
                     <!-- Button toggle menu -->
@@ -36,7 +37,7 @@
                     <!-- Menu responsive -->
                     <transition name="slide-menu" mode="in-out">
                         <nav class="bg-white w-[100%] my-3 font-[quicksand] absolute" :class="{ 'block': isOpen, 'hidden': !isOpen }" v-if="isOpen">
-                                <ul class="navbar-nav">
+                                <ul class="max-lg:[overflow-y:scroll] max-lg:h-75 max-lg:[box-shadow:0_7px_13px_0_rgba(0_,0_,0_,0.1)]">
                                     <li class="nav-item">
                                         <RouterLink to="/" class="nav-link mt-4 mb-2.5 ml-8">Trang chủ</RouterLink>
                                     </li>
@@ -98,17 +99,19 @@
                 </div>
             </div>
         </div>
-        <div class="techvia-nav font-[quicksand]">
+        <!-- desktop -->
+        <div class="techvia-nav max-lg:!hidden font-[quicksand]">
             <div class="container">
-                <nav class="navbar md:![flex-wrap:nowrap] md:!justify-start">
-                    <RouterLink class="navbar-brand" to="/">
-                        <img src="/src/assets/logo.png" class="white-logo" alt="logo">
-                        <img src="/src/assets/logo-black.png" class="black-logo" alt="logo">
+                <nav class="navbar !p-0 md:![flex-wrap:nowrap] md:!justify-start">
+                    <RouterLink class="whitespace-nowrap [text-decoration:none] my-1.25 mr-4" to="/">
+                        <img src="/src/assets/img/logo.png" class="white-logo" alt="logo">
+                        <img src="/src/assets/img/logo-black.png" class="black-logo" alt="logo">
                     </RouterLink>
-                    <div class="md:!flex md:basis-auto basis-100% grow-1 items-center" style="display: block;">
-                        <ul class="navbar-nav md:![flex-direction:row]">
+                    <!-- style="display: block;" -->
+                    <div class="md:!flex md:basis-auto basis-100% grow-1 items-center">
+                        <ul class="navbar-nav m-auto md:![flex-direction:row]">
                             <li class="nav-item">
-                                <RouterLink to="/" class="nav-link">Trang chủ</RouterLink>
+                                <RouterLink to="/" class="nav-link !ml-0">Trang chủ</RouterLink>
                             </li>
                             <li class="nav-item">
                                 <RouterLink to="/ve-chung-toi" class="nav-link">Về chúng tôi</RouterLink>
@@ -154,10 +157,10 @@
                                     <RouterLink to="/lien-he" class="nav-link">Tuyển dụng</RouterLink>
                                 </li>
                             <li class="nav-item">
-                                <RouterLink to="/lien-he" class="nav-link">Liên hệ</RouterLink>
+                                <RouterLink to="/lien-he" class="nav-link !mr-0">Liên hệ</RouterLink>
                             </li>
                         </ul>
-                        <div class="other-option">
+                        <div class="other-option ml-0 mt-1.25">
                             <a class="default-btn no-underline" href="mailto:demo@example.com" @mouseenter="updatePosition" @mouseleave="updatePosition" ref="buttonRef">
                                 Hotline : +84(0) 902 825 586
                                 <span ref="spanRef" class="absolute pointer-events-none transition-all duration-300"></span>
@@ -318,5 +321,68 @@ onUnmounted(() => {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown
 }
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
 
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.nav-link {
+    display: block;
+    padding: var(0.5rem) var(1.5rem);
+    color: #677294;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out
+}
+
+.nav-link:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13,110,253,.25)
+}
+
+/* max-width 991px */
+@media only screen and (max-width: 991px) {
+.navbar-section.is-sticky {
+    border-bottom: none;
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+    .navbar-section.is-sticky .logo .white-logo {
+        display: none;
+    }
+
+    .navbar-section.is-sticky .logo .black-logo {
+        display: block;
+    }
+
+.logo {
+    position: relative;
+    width: 50%;
+    z-index: 999;
+}
+
+    .logo .white-logo {
+        display: block;
+    }
+
+    .logo .black-logo {
+        display: none;
+    }
+}
 </style>

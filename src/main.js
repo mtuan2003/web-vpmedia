@@ -6,8 +6,8 @@ import VueParticles from '@tsparticles/vue3'
 import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 // unocss
 import 'uno.css'
+// temp css
 import '../src/assets/css/style.css'
-import '../src/assets/css/bootstrap.min.css'
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -22,7 +22,7 @@ library.add(fas)
 
 createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).use(VueParticles, {
     init: async engine => {
-      await loadFull(engine); // you can load the full tsParticles library from "tsparticles" if you need it
+      await loadFull(engine);
     },
   }).mount('#app')
 router.afterEach((to) => {

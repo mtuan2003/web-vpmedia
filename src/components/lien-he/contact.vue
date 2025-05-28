@@ -80,3 +80,7 @@ const updatePosition = (e) => {
   }
 }
 </script>
+
+<style scoped>
+
+</style>

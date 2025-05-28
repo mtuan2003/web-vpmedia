@@ -23,29 +23,28 @@ const tabs = [
             <template #tab1>
                 <div class="row !items-center mx--3">
                         <div class="col-58lg">
-                            <div class="tab-solution-content">
-                                <h3>VBot - Tổng đài AI đa tính năng</h3>
+                                <h3 class="text-33px md-max-lg:text-30px md-max-lg:mb-15px text-[#393953] font-bold mb-15px">VBot - Tổng đài AI đa tính năng</h3>
                                 <p>
                                     VBot là giải pháp tổng đài AI thông minh, giúp doanh nghiệp tự động hóa chăm sóc
                                     khách hàng, tối ưu quy trình giao tiếp và nâng cao trải nghiệm người dùng. Với
                                     công nghệ AI tiên tiến, VBot có thể xử lý cuộc gọi, phản hồi tin nhắn và hỗ trợ
                                     khách hàng 24/7.
                                 </p>
-                                <ul class="tab-list">
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Tự động hóa tổng đài với AI, giảm thiểu
+                                <ul class="pl-0 my-25px">
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Tự động hóa tổng đài với AI, giảm thiểu
                                             chi phí vận hành
                                     </li>
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Hỗ trợ đa kênh: thoại, SMS, chatbot, tích
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Hỗ trợ đa kênh: thoại, SMS, chatbot, tích
                                             hợp với CRM
                                     </li>
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Cung cấp báo cáo, phân tích dữ liệu và
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Cung cấp báo cáo, phân tích dữ liệu và
                                         tối ưu hiệu suất tổng đài
                                     </li>
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> SDK linh hoạt, dễ dàng tích hợp vào ứng
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> SDK linh hoạt, dễ dàng tích hợp vào ứng
                                         dụng và hệ thống của doanh nghiệp
                                     </li>
                                 </ul>
@@ -57,7 +56,6 @@ const tabs = [
                                 <div class="mt-4">
                                     <a href="https://vbot.vn/" class="inline-block underline hover:underline text-16px hover:text-[#ff561d] text-[#ff561d] tracking-0.5px font-700">Xem thêm</a>
                                 </div>
-                            </div>
                         </div>
                         <div class="col-41lg">
                             <div class="text-center">
@@ -69,29 +67,28 @@ const tabs = [
             <template #tab2>
                 <div class="row !items-center mx--3">
                         <div class="col-58lg">
-                            <div class="tab-solution-content">
-                                <h3>VScan - Ứng dụng quét tài liệu thông minh</h3>
+                                <h3 class="text-33px md-max-lg:text-30px text-[#393953] font-bold mb-15px">VScan - Ứng dụng quét tài liệu thông minh</h3>
                                 <p>
                                     VScan là ứng dụng quét tài liệu mạnh mẽ, giúp bạn chuyển đổi giấy tờ, hợp đồng,
                                     hóa đơn và nhiều loại tài liệu khác sang định dạng kỹ thuật số một cách nhanh
                                     chóng và chính xác. Với công nghệ nhận diện ký tự quang học (OCR) tiên tiến,
                                     VScan giúp bạn lưu trữ, tìm kiếm và chia sẻ tài liệu dễ dàng.
                                 </p>
-                                <ul class="tab-list">
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Quét tài liệu nhanh chóng với chất lượng
+                                <ul class="pl-0 my-25px">
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Quét tài liệu nhanh chóng với chất lượng
                                         hình ảnh sắc nét
                                     </li>
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Công nghệ OCR nhận diện và chuyển đổi văn
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Công nghệ OCR nhận diện và chuyển đổi văn
                                         bản chính xác
                                     </li>
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Hỗ trợ nhiều định dạng lưu trữ: PDF, JPG,
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Hỗ trợ nhiều định dạng lưu trữ: PDF, JPG,
                                         PNG
                                     </li>
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Dễ dàng chia sẻ tài liệu qua email, cloud
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Dễ dàng chia sẻ tài liệu qua email, cloud
                                         hoặc các ứng dụng khác
                                     </li>
                                 </ul>
@@ -99,7 +96,6 @@ const tabs = [
                                     Với VScan, bạn có thể số hóa tài liệu một cách tiện lợi, tiết kiệm thời gian và
                                     nâng cao hiệu suất làm việc.
                                 </p>
-                            </div>
                         </div>
                         <div class="col-41lg">
                             <div class="text-center">
@@ -111,29 +107,28 @@ const tabs = [
             <template #tab3>
                 <div class="row !items-center mx--3">
                         <div class="col-58lg">
-                            <div class="tab-solution-content">
-                                <h3>VOffice - Ứng dụng Văn phòng điện tử</h3>
+                                <h3 class="text-33px md-max-lg:text-30px text-[#393953] font-bold mb-15px">VOffice - Ứng dụng Văn phòng điện tử</h3>
                                 <p>
                                     VOffice là giải pháp văn phòng điện tử giúp doanh nghiệp số hóa quy trình làm
                                     việc, quản lý tài liệu, điều hành công việc và tối ưu hiệu suất làm việc. Với
                                     giao diện thân thiện và hệ thống thông minh, VOffice giúp kết nối nhân sự, giảm
                                     thiểu thủ tục giấy tờ và nâng cao hiệu quả quản lý.
                                 </p>
-                                <ul class="tab-list">
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Quản lý công việc, phân quyền và theo dõi
+                                <ul class="pl-0 my-25px">
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Quản lý công việc, phân quyền và theo dõi
                                         tiến độ dễ dàng
                                     </li>
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Lưu trữ, tìm kiếm và chia sẻ tài liệu
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Lưu trữ, tìm kiếm và chia sẻ tài liệu
                                         nhanh chóng
                                     </li>
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Ký số, phê duyệt và xử lý hồ sơ trực
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Ký số, phê duyệt và xử lý hồ sơ trực
                                         tuyến an toàn
                                     </li>
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Tích hợp email, lịch làm việc và hệ thống
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Tích hợp email, lịch làm việc và hệ thống
                                         thông báo thông minh
                                     </li>
                                 </ul>
@@ -142,7 +137,6 @@ const tabs = [
                                     gian và nâng cao năng suất lao động.
                                 </p>
 
-                            </div>
                         </div>
                         <div class="col-41lg">
                             <div class="text-center">
@@ -154,28 +148,27 @@ const tabs = [
             <template #tab4>
                 <div class="row !items-center mx--3">
                         <div class="col-58lg">
-                            <div class="tab-solution-content">
-                                <h3>Golden Health - Ứng dụng theo dõi sức khỏe toàn diện</h3>
+                                <h3 class="text-33px md-max-lg:text-30px text-[#393953] font-bold mb-15px">Golden Health - Ứng dụng theo dõi sức khỏe toàn diện</h3>
                                 <p>
                                     Golden Health là ứng dụng giúp bạn quản lý và theo dõi sức khỏe cá nhân một cách
                                     hiệu quả. Với các tính năng thông minh, ứng dụng hỗ trợ ghi nhận các chỉ số quan
                                     trọng, nhắc nhở lịch khám và đưa ra phân tích sức khỏe dựa trên dữ liệu thực tế.
                                 </p>
-                                <ul class="tab-list">
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Theo dõi nhịp tim, huyết áp, cân nặng và
+                                <ul class="pl-0 my-25px">
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Theo dõi nhịp tim, huyết áp, cân nặng và
                                         các chỉ số sức khỏe quan trọng
                                     </li>
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Ghi chép nhật ký sức khỏe và quá trình
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Ghi chép nhật ký sức khỏe và quá trình
                                         điều trị
                                     </li>
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Nhắc nhở uống thuốc, lịch khám bệnh và
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Nhắc nhở uống thuốc, lịch khám bệnh và
                                         tập luyện
                                     </li>
-                                    <li>
-                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73]"/> Phân tích sức khỏe và đề xuất cải thiện
+                                    <li class="text-4 text-[#5f5f5f] list-none pb-10px">
+                                        <font-awesome-icon icon="fas fa-check-circle" class="h-4 w-4 color-[#142b73] mr-5px"/> Phân tích sức khỏe và đề xuất cải thiện
                                         thể trạng
                                     </li>
                                 </ul>
@@ -184,7 +177,6 @@ const tabs = [
                                     mạnh và phòng ngừa rủi ro bệnh tật.
                                 </p>
 
-                            </div>
                         </div>
                         <div class="col-41lg">
                             <div class="text-center">

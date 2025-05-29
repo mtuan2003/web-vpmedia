@@ -1,18 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../pages/index.vue';
-import AboutUs from '../pages/ve-chung-toi.vue';
 import Contact from '../pages/lien-he.vue';
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: () => import('../pages/index.vue')
   },
   {
     path: '/ve-chung-toi',
     name: 've-chung-toi',
-    component: AboutUs,
+    component: () => import('../pages/ve-chung-toi.vue'),
     meta : { title : 'VPMEDIA - Về chúng tôi'}
   },
   {

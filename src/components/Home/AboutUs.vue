@@ -21,14 +21,14 @@
           <div class="mt-8.75">
             <RouterLink to="/ve-chung-toi">
               <a
-              class="default-btn no-underline font-[quicksand]"
+              class="[border:none] relative inline-block text-center overflow-hidden z-1 text-[#ffffff] bg-[#142b73] [transition:0.4s] rounded-3px font-600 text-4 px-35px py-14px [box-shadow:0_7px_25px_rgb(123,_104,_238,_0.25)] group hover:text-[#ffffff] focus:text-[#ffffff] no-underline font-[quicksand]"
               @mouseenter="updatePosition"
               @mouseleave="updatePosition"
               ref="buttonRef"
               >Xem thêm
               <span
                 ref="spanRef"
-                class="absolute pointer-events-none transition-all duration-300"
+                class="absolute block w-0 h-0 rounded-50% bg-[#056bd9] ![transition:width_0.5s_ease-in-out,_height_0.5s_ease-in-out] ![transform:translate(-50%,_-50%)] z--1 rounded-30px group-hover:w-225% group-hover:h-562.5px group-focus:w-225% group-focus:h-562.5px pointer-events-none transition-all duration-300"
               ></span>
             </a>
             </RouterLink>

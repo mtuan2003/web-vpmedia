@@ -147,17 +147,17 @@ const updatePosition2 = (e) => {
                                   trường Công nghệ thông tin và Viễn thông.
                               </p>
                               <div class="font-[quicksand] max-md:mt-30px md:mt-25px sm:flex max-sm:block max-sm:text-center max-lg:justify-center !items-center text-left">
-                                  <a href="#services-section" class="default-btn-one md:mr-5 max-md:mr-10px  no-underline"
+                                  <a href="#services-section" class="[border:none] relative inline-block text-center overflow-hidden z-1 text-[#142b73] bg-[#ffffff] [transition:0.4s] rounded-3px font-600 text-4 px-35px py-14px [box-shadow:0_7px_25px_rgb(123,_104,_238,_0.25)] group hover:text-[#ffffff] focus:text-[#ffffff] md:mr-5 max-md:mr-10px  no-underline"
                                   @mouseenter="updatePosition"
                                   @mouseleave="updatePosition" ref="buttonRef">Dịch vụ
                                   <span ref="spanRef"
-                                  class="absolute pointer-events-none transition-all duration-300 !bg-[#142b73]"></span></a>
+                                  class="group-hover:w-225% group-hover:h-562.5px group-focus:w-225% group-focus:h-562.5px absolute block w-0 h-0 rounded-50% bg-[#3e57d0] ![transition:width_0.5s_ease-in-out,_height_0.5s_ease-in-out] ![transform:translate(-50%,-50%)] z--1 rounded-30px pointer-events-none transition-all duration-300 !bg-[#142b73]"></span></a>
                                     <RouterLink to="/lien-he" class="mb--6px">
-                                    <a class="default-btn-one md:mr-5 max-md:mr-10px no-underline"
+                                    <a class="[border:none] relative inline-block text-center overflow-hidden z-1 text-[#142b73] bg-[#ffffff] [transition:0.4s] rounded-3px font-600 text-4 px-35px py-14px [box-shadow:0_7px_25px_rgb(123,_104,_238,_0.25)] group hover:text-[#ffffff] focus:text-[#ffffff] md:mr-5 max-md:mr-10px no-underline"
                                     @mouseenter="updatePosition2"
                                     @mouseleave="updatePosition2" ref="buttonRef2">Liên hệ với chúng tôi
                                     <span ref="spanRef2"
-                                    class="absolute pointer-events-none transition-all duration-300 !bg-[#142b73]"></span></a>
+                                    class="group-hover:w-225% group-hover:h-562.5px group-focus:w-225% group-focus:h-562.5px absolute block w-0 h-0 rounded-50% bg-[#3e57d0] ![transition:width_0.5s_ease-in-out,_height_0.5s_ease-in-out] ![transform:translate(-50%,-50%)] z--1 rounded-30px pointer-events-none transition-all duration-300 !bg-[#142b73]"></span></a>
                                     </RouterLink>
                               </div>
                           </div>
@@ -176,6 +176,3 @@ const updatePosition2 = (e) => {
       </div>
   </div>
 </template>
-<style scoped>
-
-</style>

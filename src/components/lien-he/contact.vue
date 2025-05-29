@@ -20,31 +20,31 @@
                         <div class="row mb-2.5">
                             <div class="col-50md">
                                 <div class="mb-30px">
-                                    <input type="text" name="name" id="name" class="form-control" required="" placeholder="Họ và tên">
+                                    <input type="text" name="name" id="name" class="form-control border-[#86b7fe] outline-0 [box-shadow:0_0_0_4px_rgba(13,_110_253_.25)]" required="" placeholder="Họ và tên">
                                 </div>
                             </div>
                             <div class="col-50md">
                                 <div class="mb-30px">
-                                    <input type="email" name="email" id="email" class="form-control" required="" placeholder="Địa chỉ email">
+                                    <input type="email" name="email" id="email" class="form-control border-[#86b7fe] outline-0 [box-shadow:0_0_0_4px_rgba(13,_110_253_.25)]" required="" placeholder="Địa chỉ email">
                                 </div>
                             </div>
                             <div class="col-50md">
                                 <div class="mb-30px">
-                                    <input type="text" name="phone" id="phone" required="" class="form-control" placeholder="Số điện thoại">
+                                    <input type="text" name="phone" id="phone" required="" class="form-control border-[#86b7fe] outline-0 [box-shadow:0_0_0_4px_rgba(13,_110_253_.25)]" placeholder="Số điện thoại">
                                 </div>
                             </div>
                             <div class="col-50md">
                                 <div class="mb-30px">
-                                    <input type="text" name="subject" id="subject" class="form-control" required="" placeholder="Tiêu đề">
+                                    <input type="text" name="subject" id="subject" class="form-control border-[#86b7fe] outline-0 [box-shadow:0_0_0_4px_rgba(13,_110_253_.25)]" required="" placeholder="Tiêu đề">
                                 </div>
                             </div>
                                 <div class="mb-30px">
-                                    <textarea name="message" class="form-control resize-y h-auto pt-15px lh-initial" id="message" cols="30" rows="6" required="" placeholder="Nội dung"></textarea>
+                                    <textarea name="message" class="form-control border-[#86b7fe] outline-0 [box-shadow:0_0_0_4px_rgba(13,_110_253_.25)] resize-y h-auto pt-15px lh-initial" id="message" cols="30" rows="6" required="" placeholder="Nội dung"></textarea>
                                 </div>
                                 <div class="text-left mt-1.25">
-                                    <button type="submit" class="default-btn cursor-pointer"
+                                    <button type="submit" class="[border:none] relative inline-block text-center overflow-hidden z-1 text-[#ffffff] bg-[#142b73] [transition:0.4s] rounded-3px font-600 text-4 px-35px py-14px [box-shadow:0_7px_25px_rgb(123,_104,_238,_0.25)] group cursor-pointer"
                                     @mouseenter="updatePosition" @mouseleave="updatePosition" ref="buttonRef">Gửi 
-                                        <span ref="spanRef" class="absolute pointer-events-none transition-all duration-300"></span>
+                                        <span ref="spanRef" class="absolute block w-0 h-0 rounded-50% bg-[#056bd9] ![transition:width_0.5s_ease-in-out,_height_0.5s_ease-in-out] ![transform:translate(-50%,_-50%)] z--1 rounded-30px group-hover:w-225% group-hover:h-562.5px group-focus:w-225% group-focus:h-562.5px pointer-events-none transition-all duration-300"></span>
                                     </button>
                                 </div>
                         </div>
@@ -82,5 +82,37 @@ const updatePosition = (e) => {
 </script>
 
 <style scoped>
+form .form-control {
+	background-color: #ffffff;
+	border: none;
+	height: 55px;
+	font-size: 16px;
+	border-left: 3px solid #142b73;
+	box-shadow: 0px 5px 30px 0px rgba(148, 146, 245, 0.15);
+}
+
+form .form-control:focus {
+		border-left: 3px solid #142b73;
+		box-shadow: none;
+	}
+
+textarea.form-control {
+	height: auto;
+	padding-top: 15px;
+	line-height: initial;	
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    appearance: none;
+    background-clip: padding-box;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
 
 </style>

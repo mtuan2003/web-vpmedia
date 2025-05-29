@@ -12,12 +12,12 @@
                 </p>
                 <div class="mt-5 mr-3.75 max-md:ml-0">
                     <RouterLink to="/lien-he">
-                        <a class="default-btn-one max-md:ml-2.5 no-underline font-[quicksand]"
+                        <a class="group [border:none] relative inline-block text-center overflow-hidden z-1 text-[#142b73] bg-[#ffffff] [transition:0.4s] rounded-3px font-600 text-4 px-35px py-14px [box-shadow:0_7px_25px_rgb(123,_104,_238,_0.25)] hover:text-[#ffffff] focus:text-[#ffffff] max-md:ml-2.5 no-underline font-[quicksand]"
                     @mouseenter="updatePosition"
                     @mouseleave="updatePosition" ref="buttonRef"
                     >Liên hệ với chúng tôi
                         <span ref="spanRef"
-                        class="absolute pointer-events-none transition-all duration-300"></span>
+                        class="group-hover:w-225% group-hover:h-562.5px group-focus:w-225% group-focus:h-562.5px absolute block w-0 h-0 rounded-50% bg-[#3e57d0] ![transition:width_0.5s_ease-in-out,_height_0.5s_ease-in-out] ![transform:translate(-50%,-50%)] z--1 rounded-30px pointer-events-none transition-all duration-300"></span>
                     </a>
                     </RouterLink>
                 </div>

@@ -6,8 +6,6 @@ import VueParticles from '@tsparticles/vue3'
 import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 // unocss
 import 'uno.css'
-// temp css
-import '../src/assets/css/style.css'
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 

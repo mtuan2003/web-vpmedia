@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar-section max-lg:py-5 max-lg:shadow-[rgba(0,0,0,0.11)_0px_5px_40px_0px]">
+    <div class="navbar-section bg-transparent [transition:0.4s] absolute z-999 left-0 top-0 w-100% h-auto max-lg:py-5 max-lg:shadow-[rgba(0,0,0,0.11)_0px_5px_40px_0px]">
         <!-- mobile -->
         <div class="max-lg:block lg:hidden">
             <div class="container">
@@ -109,7 +109,7 @@
                     </RouterLink>
                     <!-- style="display: block;" -->
                     <div class="md:!flex md:basis-auto basis-100% grow-1 items-center">
-                        <ul class="navbar-nav m-auto md:![flex-direction:row]">
+                        <ul class="navbar-nav m-auto mt-0 md:![flex-direction:row]">
                             <li class="nav-item">
                                 <RouterLink to="/" class="nav-link !ml-0">Trang chủ</RouterLink>
                             </li>
@@ -161,9 +161,9 @@
                             </li>
                         </ul>
                         <div class="other-option ml-0 mt-1.25">
-                            <a class="default-btn no-underline" href="mailto:demo@example.com" @mouseenter="updatePosition" @mouseleave="updatePosition" ref="buttonRef">
+                            <a class="[border:none] relative inline-block text-center overflow-hidden z-1 text-[#ffffff] bg-[#142b73] [transition:0.4s] rounded-3px font-600 text-4 px-35px py-14px [box-shadow:0_7px_25px_rgb(123,_104,_238,_0.25)] hover:bg-[#142b73] hover:text-[#ffffff] group no-underline" href="mailto:demo@example.com" @mouseenter="updatePosition" @mouseleave="updatePosition" ref="buttonRef">
                                 Hotline : +84(0) 902 825 586
-                                <span ref="spanRef" class="absolute pointer-events-none transition-all duration-300"></span>
+                                <span ref="spanRef" class="absolute block w-0 h-0 rounded-50% bg-[#056bd9] ![transition:width_0.5s_ease-in-out,_height_0.5s_ease-in-out] ![transform:translate(-50%,_-50%)] z--1 rounded-30px group-hover:w-225% group-hover:h-562.5px group-focus:w-225% group-focus:h-562.5px pointer-events-none transition-all duration-300"></span>
                             </a>
                         </div>
                     </div>
@@ -277,27 +277,22 @@ onUnmounted(() => {
 /* sticky */
 .is-sticky {
     position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		z-index: 999;
-		-webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-		box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-		background: #ffffff !important;
-		-webkit-animation: 500ms ease-in-out 0s normal fadeInDown;
-		animation: 500ms ease-in-out 0s normal fadeInDown;
-		-webkit-transition: 0.4s;
-		transition: 0.4s;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+	background: #ffffff !important;
+	animation: 500ms ease-in-out 0s normal fadeInDown;
+	transition: 0.4s;
 }
 @-webkit-keyframes fadeInDown {
     0% {
-        -webkit-transform: translate3d(0,-100%,0);
         opacity: 0;
         transform: translate3d(0,-100%,0)
     }
 
     to {
-        -webkit-transform: translateZ(0);
         opacity: 1;
         transform: translateZ(0)
     }
@@ -305,21 +300,276 @@ onUnmounted(() => {
 
 @keyframes fadeInDown {
     0% {
-        -webkit-transform: translate3d(0,-100%,0);
         opacity: 0;
         transform: translate3d(0,-100%,0)
     }
 
     to {
-        -webkit-transform: translateZ(0);
         opacity: 1;
         transform: translateZ(0)
     }
 }
 
 .fadeInDown {
-    -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown
+}
+
+.techvia-nav {
+	background-color: transparent;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+	.techvia-nav .navbar .navbar-nav .nav-item {
+		position: relative;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item a {
+		font-size: 15px;
+		font-weight: 600;
+		color: #ffffff;
+		text-transform: uppercase;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+		position: absolute;
+		border: none;
+		top: 80px;
+		left: 0;
+		width: 240px;
+		z-index: 99;
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+		border-radius: 3px;
+		transition: all 0.3s ease-in-out;
+		padding: 0px;
+		overflow: hidden;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li {
+		padding: 0;
+		border-bottom: 1px solid #f1f1f1;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li:last-child {
+		border-bottom: 0px solid transparent;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+		padding: 10px 15px;
+		margin: 0;
+		position: relative;
+		color: #0b0b31;
+		font-size: 15.5px;
+		font-weight: 500;
+		text-transform: none;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
+		color: #ffffff;
+		background: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+		left: -245px;
+		top: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
+		color: #696997;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+		color: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
+		left: -245px;
+		top: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+		color: #696997;
+		text-transform: capitalize;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+		color: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
+		left: -245px;
+		top: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+		color: #696997;
+		text-transform: capitalize;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+		color: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
+		left: 195px;
+		top: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+		color: #696997;
+		text-transform: capitalize;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+		color: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
+		left: 195px;
+		top: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+		color: #696997;
+		text-transform: capitalize;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+		color: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
+		left: 195px;
+		top: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+		color: #696997;
+		text-transform: capitalize;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+		color: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+		color: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
+		opacity: 1;
+		visibility: visible;
+		top: -15px;
+	transition: 0.4s;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+		color: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
+		opacity: 1;
+		visibility: visible;
+		top: -15px;
+		transition: 0.4s;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+		color: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
+		opacity: 1;
+		visibility: visible;
+		top: -15px;
+		transition: 0.4s;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+		color: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
+		opacity: 1;
+		visibility: visible;
+		top: -15px;
+		transition: 0.4s;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
+		color: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
+		opacity: 1;
+		visibility: visible;
+		top: -15px;
+		transition: 0.4s;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
+		color: #142b73;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
+		opacity: 1;
+		visibility: visible;
+		top: -15px;
+		transition: 0.4s;
+	}
+
+	.techvia-nav .navbar .navbar-nav .nav-item:hover .dropdown-menu {
+		opacity: 1;
+		visibility: visible;
+		top: 100%;
+		transition: 0.4s;
+	}
+
+	.techvia-nav .black-logo {
+		display: none;
+	}
+
+.navbar-section.is-sticky .navbar-nav .nav-item a {
+	color: #505050;
+}
+.navbar-section.is-sticky .navbar-nav .nav-item a:hover, .navbar-section.is-sticky .navbar-nav .nav-item a:focus, .navbar-section.is-sticky .navbar-nav .nav-item a.active {
+	color: #142b73;
+}
+
+.navbar-section.is-sticky .techvia-nav .white-logo {
+	display: none;
+}
+
+.navbar-section.is-sticky .techvia-nav .black-logo {
+	display: block;
 }
 .navbar-nav {
     display: flex;

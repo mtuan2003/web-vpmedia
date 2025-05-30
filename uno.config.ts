@@ -1,3 +1,4 @@
+// uno.config.ts -> .js
 import {
   defineConfig,
   presetAttributify,
@@ -9,7 +10,7 @@ import {
 export default defineConfig({
   theme: {
     breakpoints: {
-      xs: "420px",
+      xs: "480px",
       sm: "576px",
       md: "768px",
       lg: "992px",
@@ -61,12 +62,36 @@ export default defineConfig({
       "2xl:max-w-1320px xl:max-w-1140px lg:max-w-960px md:max-w-720px sm:max-w-540px w-100% px-0.75rem mx-auto",
       'rotate-icon' : 'hover:[transform:translateY(-10px)]',
       'rotate-icon2' : 'hover:[transform:rotateY(180deg)]',
+      // guest
+      'partner-item' : '5item-lg 3item-maxlg 2item-maxmd 1item-maxxs px-2.5 nth-6:max-md:ml-0 nth-11:ml-10%',
+      'partner-logo' : 'items-responsive items-custom',
+      // responsive item
+      '5item-lg' : 'lg:!flex-[0_0_20%] lg:!max-w-[20%]',
+      '3item-maxlg' : 'max-lg:!flex-[0_0_33%] max-lg:!max-w-[33%]',
+      '2item-maxmd' : 'max-md:!flex-[0_0_50%] max-md:!max-w-[50%]',
+      '1item-maxxs' : 'max-xs:!flex-[100%] max-xs:!max-w-[100%]',
+      // items a href
+      'items-responsive' : 'max-sm:![padding:15px_30px] max-md:![padding:0px_15px] max-lg:![padding:0px_30px] lg:![padding:0px_20px]', // py_px
+      'items-custom' : 'relative block rounded-[5px] overflow-hidden mb-30px shadow-[0px_5px_15px_0px_rgb(82,90,101,0.1)]',
   },
   presets: [
     presetAttributify(),
     presetIcons(),
     presetWebFonts(),
     presetWind3(),
+  ],
+  variants: [
+    // Variant cho nth-child(n)
+    (matcher) => {
+      const nthChildRE = /^nth-(\d+):/
+      const match = matcher.match(nthChildRE)
+      if (match) {
+        return {
+          matcher: matcher.replace(nthChildRE, ''),
+          selector: s => `${s}:nth-child(${match[1]})`,
+        }
+      }
+    },
   ],
   preflights: [
     {

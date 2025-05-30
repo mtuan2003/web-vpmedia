@@ -15,7 +15,7 @@
                     <a href="mailto:support@vpmedia.vn" class="text-4 font-600 tracking-1.5px block lh-normal no-underline color-[#0b0b31] font-[quicksand]">support@vpmedia.vn</a>
                 </div>
             </div>
-            <div class="col-50lg lg:!ml-8.33333333%">
+            <div class="col-50lg lg:!ml-8.33333333% lg:!px-3">
                     <form class="mt-4">
                         <div class="row mb-2.5">
                             <div class="col-50md">

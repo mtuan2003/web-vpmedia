@@ -7,12 +7,5 @@ export default defineConfig({
   plugins: [vue(), 
     UnoCSS()
   ]
-  // build: {
-  //   rollupOptions: {
-  //     input: {
-  //       home: 'index.html',
-  //       veChungToi: 've-chung-toi.html',
-  //     },
-  //   },
-  // },
+
 })
